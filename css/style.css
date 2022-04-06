@@ -3,10 +3,6 @@
 
 }
 
-* {
-font-family: 'Lato', sans-serif;
-}
-
 a {
     text-decoration: none;
 }
@@ -239,6 +235,8 @@ span {
     background-color: var(--black-bkg);
     display: flex;
     justify-content: center;
+    margin-top: 95px;
+    min-height: 341px;
     
 }
 
@@ -246,16 +244,123 @@ span {
     width: 360px;
     height: 174px;
     margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer__item {
     margin-top: 28px;
 }
 
-.footer__list-text {
-    font-family: 'lato';
+.footer__list-title {
+    
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #FBFBFB;
+    text-align: center;
+}
+
+.footer__list-text {
+    
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.footer__subscribe {
+    display: flex;
+    justify-content: space-evenly;
+   background-repeat: no-repeat;
+    align-items: center;
+    background-image: url(../img/footer-subcribe.jpg);
+    background-position: center;
+    min-height: 448px;
+}
+
+.footer__subscribe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__subscribe-text {
+    
+    font-weight: 400 light;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 359px;
+    margin-top: 20px
+}
+
+.footer__subscribe-form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__subscribe-form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__input-text {
+    box-sizing: border-box;
+    width: 256px;
+    height: 49px;
+    border: 0;
+    border-radius: 25px 0 0 25px;
+    color: #9F9F9F;
+    padding-left: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background: #E1E1E1;;
+
+}
+
+.footer__input-btn {
+    background: #F16D7F;
+    width: 100px;
+    height: 49px;
+    margin-left: -3px;
+    border: 0;
+    border-radius: 0 25px 25px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;;
+}
+
+.footer__end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 79px;
+    background-color: var(--black-bkg);
+}
+
+.footer__end-list {
+    display: flex;
+}
+
+.footer__end-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+
+}
+
+.footer__end-item {
+    margin-left: 7px;
 }
