@@ -7,6 +7,9 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -24,6 +27,10 @@ a {
     align-items: center;
 }
 
+.header__logo {
+    display: flex;
+    align-items: center;
+}
 .header__loupe {
     margin-left: 41px;
 }
@@ -49,12 +56,13 @@ a {
     background-color: #F1E4E6;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     
 
 }
 
 .main__section-brand-logo {
-    margin-left: 91px;
+    
     text-transform: uppercase;
 }
 
@@ -279,6 +287,7 @@ span {
     background-image: url(../img/footer-subcribe.jpg);
     background-position: center;
     min-height: 448px;
+    background-size: cover;
 }
 
 .footer__subscribe-list {
@@ -341,7 +350,7 @@ span {
     color: #FFFFFF;;
 }
 
-.footer__end {
+.footer__copysocial {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -349,11 +358,11 @@ span {
     background-color: var(--black-bkg);
 }
 
-.footer__end-list {
+.footer__copysocial-list {
     display: flex;
 }
 
-.footer__end-text {
+.footer__copysocial-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -361,6 +370,6 @@ span {
 
 }
 
-.footer__end-item {
+.footer__copysocial-item {
     margin-left: 7px;
 }
