@@ -274,11 +274,12 @@ span {
 .footer__subscribe {
     display: flex;
     justify-content: space-evenly;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     align-items: center;
     background-image: url(../img/footer-subcribe.jpg);
     background-position: center;
     min-height: 448px;
+    background-size: cover;
 }
 
 .footer__subscribe-list {
