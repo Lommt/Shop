@@ -113,72 +113,72 @@
             </nav>
         </div>
     </header>
-
-    <main class="">
-        <div class="registration__main-title">
-            <h1 class="registration__main-title-style continer">
-                registration
-            </h1>
-        </div>
-        <div class="registration__main container">
-            <div class="main__wrapper">
-                <fieldset class="main__fieldset-name">
-                    <legend class="main__legend">
-                        <p class="legend__text">
-                            Your Name
-                        </p>
-                    </legend>
-                    <form class="form__name" action="#">
-                        <label class="v-h" for="First-name">
-                            <p class="label__text">First name</p>
-                        </label>
-                        <input class="" id="First-name" type="text" placeholder="First Name">
-                        <label class="v-h" for="Last-name">
-                            <p class="label__text">Last name</p>
-                        </label>
-                        <input type="text" id="Last-name" placeholder="Last Name">
-                        <div class="radio">
-                            <input type="radio" name="gender" id="male">
-                            <label class="radio__label" for="male">Male</label>
-                            <input type="radio" name="gender" id="female">
-                            <label class="radio__label" for="female">Female</label>
-                        </div>
-
-                    </form>
-                </fieldset>
-                <fieldset class="main__fieldset-pass">
-                    <form class="form__pass" action="#">
-                        <legend class="main__legend">
-                            <p class="legend__text">
-                                Login details
-                            </p>
-
-                        </legend>
-                        <label class="v-h" for="email">
-                            <p class="label__text">email</p>
-                        </label>
-                        <input type="email" id="email" placeholder="Email">
-                        <label class="v-h" for="password">
-                            <p class="label__text">password</p>
-                        </label>
-                        <input type="password" id="password" placeholder="Password">
-                        <p class="fieldset__text">
-                            Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
-                            lowercase
-                            letters
-                        </p>
-
-                        <button class="join-btn" type="submit">
-                            <p class="join-btn-text">
-                                Join Now
-                            </p>
-                        </button>
-                    </form>
-                </fieldset>
+    <main class="registration__main">
+        <section class="registration__main-section">
+            <div class="registration__main-title">
+                <h1 class="registration__main-title-style continer">
+                    registration
+                </h1>
             </div>
+        </section>
+        <div class="main__wrapper container">
+            <section class="registration__main-section-login">
+                <div class="registration__main-login">
+                    <form class="form__name" action="#">
+                        <fieldset class="main__fieldset-name">
+                            <legend class="main__legend">
+                                <p class="legend__text">
+                                    Your Name
+                                </p>
+                            </legend>
 
+                            <label class="v-h" for="First-name">
+                                <p class="label__text">First name</p>
+                            </label>
+                            <input class="" id="First-name" type="text" placeholder="First Name">
+                            <label class="v-h" for="Last-name">
+                                <p class="label__text">Last name</p>
+                            </label>
+                            <input type="text" id="Last-name" placeholder="Last Name">
+                            <div class="radio">
+                                <input type="radio" name="gender" id="male">
+                                <label class="radio__label" for="male">Male</label>
+                                <input type="radio" name="gender" id="female">
+                                <label class="radio__label" for="female">Female</label>
+                            </div>
+                        </fieldset>
+                    </form>
 
-            <section class="registration__section">
+                    <form class="form__pass" action="#">
+                        <fieldset class="main__fieldset-pass">
+
+                            <legend class="main__legend">
+                                <p class="legend__text">
+                                    Login details
+                                </p>
+                            </legend>
+                            <label class="v-h" for="email">
+                                <p class="label__text">email</p>
+                            </label>
+                            <input type="email" id="email" placeholder="Email">
+                            <label class="v-h" for="password">
+                                <p class="label__text">password</p>
+                            </label>
+                            <input type="password" id="password" placeholder="Password">
+                            <p class="fieldset__text">
+                                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                                lowercase
+                                letters
+                            </p>
+                            <button class="join-btn" type="submit">
+                                Join Now
+                            </button>
+                        </fieldset>
+                    </form>
+
+                </div>
+            </section>
+            <section class="registration__main-section-inf">
                 <h2 class="registration__section-title">
                     loyalty has its perks
                 </h2>
@@ -204,41 +204,27 @@
                 </p>
             </section>
         </div>
-
-
-
     </main>
-
     <footer>
         <div class="footer__subscribe">
-            <ul class="footer__subscribe-list">
-                <li class="footer__subscribe-item">
-                    <img src="img/subscribe-face.png" alt="face">
-                </li>
-                <li class="footer__subscribe-item">
-                    <p class="footer__subscribe-text">
-                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
-                    </p>
-                </li>
-            </ul>
-            <ul class="footer__subscribe-list">
-                <li class="footer__subscribe-item">
-                    <h2 class="footer__subscribe-form-title">
-                        subscribe
-                    </h2>
-                </li>
-                <li class="footer__subscribe-item">
-                    <p class="footer__subscribe-form-text">
-                        for our newletter and promotion
-                    </p>
-                </li>
-                <li class="footer__subscribe-item">
-                    <form action="#">
-                        <input class="footer__input-text" type="email" name="email" placeholder="Enter Your Email">
-                        <input class="footer__input-btn" type="submit" value="Subscribe">
-                    </form>
-                </li>
-            </ul>
+            <div class="footer__subscribe-list">
+                <img src="img/subscribe-face.png" alt="face">
+                <p class="footer__subscribe-text">
+                    “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                </p>
+            </div>
+            <div class="footer__subscribe-list">
+                <h2 class="footer__subscribe-form-title">
+                    subscribe
+                </h2>
+                <p class="footer__subscribe-form-text">
+                    for our newletter and promotion
+                </p>
+                <form action="#">
+                    <input class="footer__input-text" type="email" name="email" placeholder="Enter Your Email">
+                    <input class="footer__input-btn" type="submit" value="Subscribe">
+                </form>
+            </div>
         </div>
         <div class="footer__copysocial">
             <p class="footer__copysocial-text">

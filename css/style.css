@@ -405,6 +405,10 @@ span {
     text-transform: uppercase;
 }
 
+.footer__item-img {
+    height: 40px;
+}
+
 .footer__input-text {
     box-sizing: border-box;
     width: 256px;
@@ -469,15 +473,14 @@ span {
     margin-left: 7px;
 }
 
-.form__name {
+.main__fieldset-name {
     display: flex;
     flex-direction: column;
 }
 
-.form__pass {
+.main__fieldset-pass {
     display: flex;
     flex-direction: column;
-
 }
 
 .registration__main-title {
@@ -508,11 +511,23 @@ span {
 
 }
 
-.main__wrapper {
+.registration__main-section-login {
+    width: 40%;
     display: flex;
     flex-direction: column;
+}
+
+.registration__main-section-inf {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: space-between;
     margin-top: 64px;
-    width: 35%;
+
 }
 
 .legend__text {
@@ -605,19 +620,16 @@ label+[type="password"]:hover {
     border: none;
     margin-bottom: 96px;
     cursor: pointer;
-}
-
-.join-btn-text {
     position: relative;
 }
 
-.join-btn-text:before {
+.join-btn:before {
     content: '';
     width: 18px;
     height: 10px;
     position: absolute;
-    top: 2px;
-    left: 100px;
+    top: 20px;
+    left: 126px;
     background-image: url(../img/arrow-submit.png);
     background-repeat: no-repeat;
 }
@@ -635,7 +647,7 @@ label+[type="password"]:hover {
     color: #000000;
     text-transform: uppercase;
     margin-bottom: 22px;
-    margin-top: 64px;
+
 }
 
 .registration__section-text {
@@ -670,7 +682,7 @@ label+[type="password"]:hover {
     background-repeat: no-repeat;
 }
 
-.registration__main {
+.registration__man {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
