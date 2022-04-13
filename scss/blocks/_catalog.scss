@@ -1,0 +1,136 @@
+.main__section-catalog {
+    margin-top: 96px;
+}
+
+.main__section-catalog-begin {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.main__section-catalog-begin-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.main__section-catalog-begin-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-top: 6px;
+    margin-bottom: 48px;
+}
+
+.main__section-catalog-product {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.overlay {
+    width: 100%;
+    min-height: 421px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+}
+
+.main__section-catalog-list {
+
+    width: 360px;
+
+}
+
+.button__cart {
+    position: absolute;
+    top: 209px;
+    left: 175px;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #FFFFFF;
+    background: none;
+    color: #FFFFFF;
+    width: 138px;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.overlay,
+.button__cart {
+    display: none;
+}
+
+.catalog__list-img {
+    position: relative;
+}
+
+.catalog__list-img:hover .overlay {
+    display: block;
+}
+
+.catalog__list-img:hover .button__cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.main__section-catalog-product-item {
+    margin-top: 24px;
+}
+
+.main__section-catalog-product-title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding-left: 18px;
+    text-transform: uppercase;
+
+}
+
+.main__section-catalog-product-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 12px;
+    margin-left: 12px;
+
+}
+
+.main__section-catalog-product-textcash {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-bottom: 50px;
+}
+
+.main__section-catalog-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.main__section-catalog-btn-title:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+}
+
+.main__section-catalog-btn-title {
+    border: 1px solid #FF6A6A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 14px 35px 14px 35px;
+
+}

@@ -1,0 +1,75 @@
+.main__section-sales-title {
+    display: none;
+}
+
+.main__section-sales {
+    margin-top: 65px;
+}
+
+.main__section-sales-list1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main__section-sales-item1 {
+    background-image: url(../img/sales-women.jpg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__section-sales-item2 {
+    background-image: url(../img/sales-man.jpg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__section-sales-item3 {
+    background-image: url(../img/sales-child.jpg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__section-sales-item4 {
+    background-image: url(../img/saled-accesories.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__section-sales-list-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+
+}
+
+.main__section-sales-list-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fa7474;
+    text-transform: uppercase;
+}

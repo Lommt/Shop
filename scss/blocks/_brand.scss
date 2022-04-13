@@ -1,0 +1,36 @@
+.main__section-brand {
+    background-color: #F1E4E6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.main__section-brand-logo {
+
+    text-transform: uppercase;
+}
+
+.main__section-brand-title {
+    font-weight: 900;
+    font-size: 48px;
+    position: relative;
+}
+
+.main__section-brand-title:before {
+    content: '';
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    background-color: #F16D7F;
+    top: -4px;
+    left: -30px;
+}
+
+.main__section-brand-text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+}

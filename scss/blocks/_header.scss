@@ -1,0 +1,60 @@
+.header {
+    background-color: $black-bkg;
+    position: relative;
+
+}
+
+.header-flx {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__loupe {
+    margin-left: 41px;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search::before {
+    position: absolute;
+}
+
+[type="search"]:hover {
+    outline: 1px solid red;
+}
+
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    margin-left: 34px;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.header__nav {
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    top: 75px;
+    right: 0;
+    width: 232px;
+    height: 764px;
+}

@@ -1,0 +1,208 @@
+.main__fieldset-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__fieldset-pass {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__main-title {
+    background: #F8F3F4;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label__text {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.registration__main-title-style {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+
+    width: 1140px;
+
+}
+
+.registration__main-section-login {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__main-section-inf {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+
+}
+
+.legend__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+label+[type="text"],
+label+[type="email"],
+label+[type="password"] {
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    border: 1px solid #A4A4A4;
+}
+
+label+[type="text"]:hover,
+label+[type="email"]:hover,
+label+[type="password"]:hover {
+    border: 1px solid #F16D7F;
+}
+
+.radio {
+    display: flex;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+[id="female"] {
+    margin-left: 47px;
+}
+
+[type="radio"]+label {
+    margin-top: 33px;
+    margin-left: 47px;
+}
+
+[type="radio"]:checked+label:before {
+    background: var(--black-bkg);
+
+}
+
+.radio__label {
+    position: relative;
+    margin-left: 27px;
+}
+
+.radio__label:before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    position: absolute;
+    border-radius: 17px;
+    top: -4px;
+    left: -30px;
+}
+
+.main__fieldset-pass {
+    margin-top: 35px;
+}
+
+.fieldset__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 15px;
+}
+
+.join-btn {
+    background-color: #F16D7F;
+    padding-left: 29px;
+    margin-top: 39px;
+    width: 167px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: left;
+    border: none;
+    margin-bottom: 96px;
+    cursor: pointer;
+    position: relative;
+}
+
+.join-btn:before {
+    content: '';
+    width: 18px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    left: 126px;
+    background-image: url(../img/arrow-submit.png);
+    background-repeat: no-repeat;
+}
+
+.registration__section {
+
+    width: 540px;
+
+}
+
+.registration__section-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+
+}
+
+.registration__section-text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 18px;
+    text-align: left;
+
+}
+
+.registration__section-text-img {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 18px;
+    text-align: left;
+    margin-left: 42px;
+    position: relative;
+}
+
+.registration__section-text-img:before {
+    content: '';
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: -40px;
+    background-image: url(../img/bird.png);
+    background-repeat: no-repeat;
+}
