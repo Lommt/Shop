@@ -9,33 +9,68 @@
     justify-content: space-between;
     min-height: 75px;
     align-items: center;
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        background: #FFFFFF;
+        top: 75px;
+        right: 0;
+        width: 232px;
+        height: 764px;
+    }
 }
 
 .header__logo {
-    display: flex;
-    align-items: center;
-}
-
-.header__loupe {
-    margin-left: 41px;
+    .header__search {
+        position: relative;
+        margin-left: 22px;
+    }
 }
 
 .header__search {
-    position: relative;
+    [type="search"] {
+        padding: 10px 34px;
+        border: none;
+        outline: 1px solid black;
+        border-radius: 10px;
+    }
+
 }
 
 .header__search::before {
+    content: '';
     position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 13px;
+    left: 7px;
+    /*background-image: url(/step2/Shop/img/loupe.svg);
+    background-size: 10px 10px;*/
+
+
 }
 
 [type="search"]:hover {
-    outline: 1px solid red;
+    outline: 1px solid #FFFFFF
 }
 
-
-.header__list {
-    display: flex;
-    align-items: center;
+[src="./img/loupe.svg"] {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    height: 20px;
+    width: 20px;
 }
 
 .header__item {
@@ -47,14 +82,4 @@
     background-color: transparent;
     cursor: pointer;
 
-}
-
-.header__nav {
-    display: none;
-    position: absolute;
-    background: #FFFFFF;
-    top: 75px;
-    right: 0;
-    width: 232px;
-    height: 764px;
 }

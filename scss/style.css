@@ -345,6 +345,11 @@ span {
   border: 1px solid #F16D7F;
 }
 
+.footer__input-text:focus {
+  border: 1px solid #FFFFFF;
+  background: #555;
+}
+
 .footer__input-btn {
   background: #FFFFFF;
   width: 100px;
@@ -362,6 +367,11 @@ span {
 .footer__input-btn:hover {
   color: #FFFFFF;
   background: #F16D7F;
+}
+
+.footer__input-btn:focus {
+  color: #fff;
+  background: #555;
 }
 
 .footer__copysocial {
@@ -412,7 +422,7 @@ span {
           align-items: center;
 }
 
-.header__logo {
+.header-flx .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,29 +431,58 @@ span {
           align-items: center;
 }
 
-.header__loupe {
-  margin-left: 41px;
+.header-flx .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header__search {
+.header-flx .header__nav {
+  display: none;
+  position: absolute;
+  background: #FFFFFF;
+  top: 75px;
+  right: 0;
+  width: 232px;
+  height: 764px;
+}
+
+.header__logo .header__search {
   position: relative;
+  margin-left: 22px;
+}
+
+.header__search [type="search"] {
+  padding: 10px 34px;
+  border: none;
+  outline: 1px solid black;
+  border-radius: 10px;
 }
 
 .header__search::before {
+  content: '';
   position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 13px;
+  left: 7px;
+  /*background-image: url(/step2/Shop/img/loupe.svg);
+    background-size: 10px 10px;*/
 }
 
 [type="search"]:hover {
-  outline: 1px solid red;
+  outline: 1px solid #FFFFFF;
 }
 
-.header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+[src="./img/loupe.svg"] {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  height: 20px;
+  width: 20px;
 }
 
 .header__item {
@@ -454,20 +493,6 @@ span {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-.header__nav {
-  display: none;
-  position: absolute;
-  background: #FFFFFF;
-  top: 75px;
-  right: 0;
-  width: 232px;
-  height: 764px;
-}
-
-.nav__item-link {
-  color: #6F6E6E;
 }
 
 .nav__item-link:hover {
@@ -493,17 +518,7 @@ span {
   margin-left: 34px;
 }
 
-.header__nav-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  text-transform: uppercase;
-  margin-top: 37px;
-  margin-left: 34px;
-}
-
-.header__nav-item {
+.header__nav-list .header__nav-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -512,12 +527,26 @@ span {
   margin-top: 24px;
 }
 
-.nav__list-item {
+.header__nav-list .nav__list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
   margin: 12px;
+}
+
+.header__nav-list .nav__item-link {
+  color: #6F6E6E;
+}
+
+.header__nav .header__nav-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-left: 34px;
 }
 
 .main__fieldset-name {
@@ -651,7 +680,7 @@ label + [type="password"]:hover {
 }
 
 [type="radio"]:checked + label:before {
-  background: var(--black-bkg);
+  background: #222222;
 }
 
 .radio__label {

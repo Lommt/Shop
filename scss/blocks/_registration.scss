@@ -98,7 +98,7 @@ label+[type="password"]:hover {
 }
 
 [type="radio"]:checked+label:before {
-    background: var(--black-bkg);
+    background: $black-bkg;
 
 }
 

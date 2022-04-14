@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +22,11 @@
                 <a href="index.html">
                     <img class="header__logo" src="img/logo.png" alt="logo">
                 </a>
-                <a href="#">
-                    <img class="header__loupe" src="img/loupe.svg" alt="loupe">
-                </a>
-
+                <form class="header__search" action="#">
+                    <label class="v-h" for="search"></label>
+                    <img src="./img/loupe.svg" alt="">
+                    <input type="search" name="" id="search">
+                </form>
             </div>
             <ul class="header__list">
                 <li class="header__item">
@@ -216,7 +217,6 @@
                             </div>
                         </fieldset>
                     </form>
-
                     <form class="form__pass" action="#">
                         <fieldset class="main__fieldset-pass">
 
@@ -243,7 +243,6 @@
                             </button>
                         </fieldset>
                     </form>
-
                 </div>
             </section>
             <section class="registration__main-section-inf">

@@ -105,6 +105,13 @@
 
 }
 
+.footer__input-text:focus {
+    border: 1px solid #FFFFFF;
+    background: #555;
+
+
+}
+
 .footer__input-btn {
     background: #FFFFFF;
     width: 100px;
@@ -124,6 +131,12 @@
     color: #FFFFFF;
     background: #F16D7F;
 }
+
+.footer__input-btn:focus {
+    color: #fff;
+    background: #555;
+}
+
 
 .footer__copysocial {
     display: flex;
