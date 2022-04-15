@@ -138,6 +138,11 @@ span {
           box-sizing: border-box;
 }
 
+.button__cart:hover,
+.button__cart:focus {
+  background-color: #f54c4c;
+}
+
 .overlay,
 .button__cart {
   display: none;
@@ -172,8 +177,14 @@ span {
   font-size: 13px;
   line-height: 16px;
   color: #000000;
-  padding-left: 18px;
+  margin-left: 13px;
   text-transform: uppercase;
+}
+
+.main__section-catalog-product-title:hover {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 3px solid #f54c4c;
 }
 
 .main__section-catalog-product-text {
@@ -350,6 +361,35 @@ span {
   background: #555;
 }
 
+.footer__copysocial-item:hover .svg-img {
+  fill: red;
+}
+
+.footer__copysocial-item:hover .path-fill {
+  fill: #fff;
+}
+
+.footer__copysocial-link:focus {
+  border: none;
+  outline: none;
+}
+
+.footer__copysocial-link:focus .svg-img {
+  fill: red;
+}
+
+.footer__copysocial-link:focus .path-fill {
+  fill: #fff;
+}
+
+.svg-img {
+  fill: #FFFFFF;
+}
+
+.path-fill {
+  fill: #222222;
+}
+
 .footer__input-btn {
   background: #FFFFFF;
   width: 100px;
@@ -402,11 +442,23 @@ span {
 
 .footer__copysocial-item {
   margin-left: 7px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .header {
   background-color: #222222;
   position: relative;
+}
+
+.header .header__item {
+  margin-left: 34px;
+}
+
+.header .header__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .header-flx {
@@ -455,29 +507,28 @@ span {
   margin-left: 22px;
 }
 
-.header__search [type="search"] {
-  padding: 10px 34px;
-  border: none;
-  outline: 1px solid black;
-  border-radius: 10px;
+.header__logo .header__search:hover {
+  display: block;
 }
 
-.header__search::before {
+.header__logo .header__search::before {
   content: '';
   position: absolute;
   width: 10px;
   height: 10px;
   top: 13px;
   left: 7px;
-  /*background-image: url(/step2/Shop/img/loupe.svg);
-    background-size: 10px 10px;*/
 }
 
-[type="search"]:hover {
-  outline: 1px solid #FFFFFF;
+.header__logo [type="search"] {
+  padding: 10px 34px;
+  border: none;
+  outline: 1px solid #222222;
+  border-radius: 10px;
+  background: #222222;
 }
 
-[src="./img/loupe.svg"] {
+.header__logo .search-svg-img {
   position: absolute;
   top: 8px;
   left: 6px;
@@ -485,19 +536,20 @@ span {
   width: 20px;
 }
 
-.header__item {
-  margin-left: 34px;
+.header__logo .search-path-fill {
+  fill: white;
 }
 
-.header__button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+.header__logo [type="search"]:hover,
+.header__logo [type="search"]:focus {
+  outline: 1px solid #f54c4c;
+  border: 2px solid #f54c4c;
+  background: #FFFFFF;
 }
 
-.nav__item-link:hover {
-  color: red;
-  cursor: pointer;
+.header__logo [type="search"]:hover + .search-svg-img > path,
+.header__logo [type="search"]:focus + .search-svg-img > path {
+  fill: #222222;
 }
 
 .header__button:hover + .header__nav,
@@ -505,13 +557,16 @@ span {
   display: block;
 }
 
-.header__nav:hover {
-  display: block;
+.header__button:hover svg > path:hover {
+  fill: red;
 }
 
-.x {
-  position: absolute;
-  display: none;
+.burger-path-fill {
+  fill: white;
+}
+
+.header__nav:hover {
+  display: block;
 }
 
 .header__nav-list {
@@ -537,6 +592,11 @@ span {
 
 .header__nav-list .nav__item-link {
   color: #6F6E6E;
+}
+
+.header__nav-list .nav__item-link:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .header__nav .header__nav-title {

@@ -1,20 +1,20 @@
-.nav__item-link:hover {
-    color: red;
-    cursor: pointer;
-}
-
 .header__button:hover+.header__nav,
 .header__button:focus+.header__nav {
     display: block;
 }
 
-.header__nav:hover {
-    display: block;
+.header__button:hover {
+    svg>path:hover {
+        fill: red;
+    }
 }
 
-.x {
-    position: absolute;
-    display: none;
+.burger-path-fill {
+    fill: white;
+}
+
+.header__nav:hover {
+    display: block;
 }
 
 .header__nav-list {
@@ -40,6 +40,11 @@
 
     .nav__item-link {
         color: #6F6E6E;
+    }
+
+    .nav__item-link:hover {
+        color: red;
+        cursor: pointer;
     }
 
 }
