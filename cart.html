@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -188,7 +188,7 @@
     <main class="registration__main">
         <section class="registration__main-section">
             <div class="registration__main-title">
-                <h1 class="registration__main-title-style continer">
+                <h1 class="registration__main-title-style container">
                     shopping cart
                 </h1>
             </div>
@@ -197,6 +197,11 @@
             <section>
                 <div class="main__cart-product">
                     <ul class="main__product-list">
+                        <button class="main__product-list-x" value="x" type="submit">
+                            <p>
+                                X
+                            </p>
+                        </button>
                         <li class="main__product-item">
                             <img src="./img/cart-product1.jpg" alt="image">
                         </li>
@@ -232,6 +237,11 @@
                         </ul>
                     </ul>
                     <ul class="main__product-list">
+                        <button class="main__product-list-x" value="x" type="submit">
+                            <p>
+                                X
+                            </p>
+                        </button>
                         <li class="main__product-item">
                             <img src="./img/cart-product2.jpg" alt="image">
                         </li>
@@ -267,18 +277,19 @@
                         </ul>
 
                     </ul>
-                    <div class="">
-                        <button class="main__product-btn">
-                            <p>
-                                clear shopping cart
-                            </p>
-                        </button>
-                        <button class="main__product-btn">
-                            <p>
-                                continue shopping
-                            </p>
-                        </button>
-                    </div>
+
+                </div>
+                <div class="main__product-twobtn">
+                    <button class="main__product-btn">
+                        <p>
+                            clear shopping cart
+                        </p>
+                    </button>
+                    <button class="main__product-btn">
+                        <p>
+                            continue shopping
+                        </p>
+                    </button>
                 </div>
             </section>
             <section class="main__section-delivery">
@@ -293,7 +304,7 @@
                         <input type="text" id="state" placeholder="State">
                         <label for="postcode"></label>
                         <input type="text" id="postcode" placeholder="Postcode / Zip">
-                        <input class="main__delivery-btn" type="button" value="get a quote">
+                        <input class="main__delivery-btn" type="submit" value="get a quote">
                     </fieldset>
                 </form>
 
@@ -315,7 +326,7 @@
         </div>
     </main>
     <footer>
-        <div class="footer__subscribe">
+        <div class="footer__subscribe ">
             <div class="footer__subscribe-list">
                 <img src="img/subscribe-face.png" alt="face">
                 <p class="footer__subscribe-text">

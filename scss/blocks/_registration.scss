@@ -12,7 +12,6 @@
     background: #F8F3F4;
     height: 148px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -31,12 +30,11 @@
     line-height: 29px;
     color: #F16D7F;
     text-transform: uppercase;
-
     width: 1140px;
 
 }
 
-.registration__main-section-login {
+.registration__main-login {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -206,4 +204,98 @@ label+[type="password"]:hover {
     left: -40px;
     background-image: url(../img/bird.png);
     background-repeat: no-repeat;
+}
+
+@media (min-width: 391px) and (max-width: 768px) {
+    .registration__main-title {
+        padding-left: 16px;
+    }
+
+    .main__wrapper {
+        margin-top: 40px;
+        justify-content: space-around;
+    }
+
+    .registration__section-title {
+
+        font-size: 16px;
+        line-height: 19px;
+
+        margin-bottom: 14px;
+    }
+
+    .registration__section-text {
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .registration__section-text-img {
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    label+[type="text"],
+    label+[type="email"],
+    label+[type="password"] {
+        box-sizing: border-box;
+    }
+
+    .registration__main-section-inf {
+        width: 354px;
+    }
+
+    .registration__main-login {
+        width: 360px;
+    }
+}
+
+@media (max-width: 390px) {
+    .registration__main-title-style {
+        text-align: center;
+    }
+
+    .main__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration__main-login {
+        width: 358px;
+    }
+
+    label+[type="text"],
+    label+[type="email"],
+    label+[type="password"] {
+        width: 359px;
+        box-sizing: border-box;
+    }
+
+    .registration__main-section-inf {
+        width: 358px;
+        margin-bottom: 100px;
+    }
+
+    .registration__section-title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 14px;
+    }
+
+    .registration__section-text {
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .registration__section-text-img {
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .join-btn {
+        margin-bottom: 40px;
+    }
 }

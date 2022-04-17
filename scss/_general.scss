@@ -1,3 +1,11 @@
+input {
+    font-family: 'Lato';
+}
+
+button {
+    font-family: 'Lato';
+}
+
 a {
     text-decoration: none;
 }
@@ -33,4 +41,16 @@ hr {
     width: 100%;
     margin-top: 21px;
     margin-bottom: 17px;
+}
+
+@media (min-width: 391px) and (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        width: 390px;
+    }
 }

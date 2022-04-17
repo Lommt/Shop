@@ -5,10 +5,10 @@
     justify-content: space-around;
 
 
+
 }
 
 .main__section-brand-logo {
-
     text-transform: uppercase;
 }
 
@@ -16,6 +16,7 @@
     font-weight: 900;
     font-size: 48px;
     position: relative;
+
 }
 
 .main__section-brand-title:before {
@@ -25,12 +26,45 @@
     position: absolute;
     background-color: #F16D7F;
     top: -4px;
-    left: -30px;
+    left: -26px;
 }
 
 .main__section-brand-text {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+
+}
+
+@media (min-width: 391px) and (max-width: 768px) {
+    .main__section-brand-img {
+
+        height: 368px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .main__section-brand {
+        height: 363px;
+    }
+
+    .main__section-brand-img {
+        display: none;
+    }
+
+    .main__section-brand-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main__section-brand-title {
+        font-size: 38px;
+    }
+
+    .main__section-brand-title:before {
+        top: 2px;
+        height: 61px;
+    }
 
 }
