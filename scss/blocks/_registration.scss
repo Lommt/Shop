@@ -1,14 +1,14 @@
-.main__fieldset-name {
+.registration__fieldset-name {
     display: flex;
     flex-direction: column;
 }
 
-.main__fieldset-pass {
+.registration__fieldset-pass {
     display: flex;
     flex-direction: column;
 }
 
-.registration__main-title {
+.registration__title {
     background: #F8F3F4;
     height: 148px;
     display: flex;
@@ -17,14 +17,14 @@
 
 }
 
-.label__text {
+.registration__label-text {
     font-weight: 300;
     font-size: 11px;
     line-height: 13px;
     color: #000000;
 }
 
-.registration__main-title-style {
+.registration__title-style {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -34,26 +34,26 @@
 
 }
 
-.registration__main-login {
+.registration__login {
     width: 40%;
     display: flex;
     flex-direction: column;
 }
 
-.registration__main-section-inf {
+.registration__inf {
     width: 55%;
     display: flex;
     flex-direction: column;
 }
 
-.main__wrapper {
+.registration__wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 64px;
 
 }
 
-.legend__text {
+.registration__legend-text {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -101,12 +101,12 @@ label+[type="password"]:hover {
 
 }
 
-.radio__label {
+.registration__label-radio {
     position: relative;
     margin-left: 27px;
 }
 
-.radio__label:before {
+.registration__label-radio:before {
     content: '';
     width: 17px;
     height: 17px;
@@ -117,11 +117,11 @@ label+[type="password"]:hover {
     left: -30px;
 }
 
-.main__fieldset-pass {
+.registration__fieldset-pass {
     margin-top: 35px;
 }
 
-.fieldset__text {
+.registration__fieldset-text {
     font-weight: 300;
     font-size: 13px;
     line-height: 16px;
@@ -129,7 +129,7 @@ label+[type="password"]:hover {
     margin-top: 15px;
 }
 
-.join-btn {
+.registration__join-btn {
     background-color: #F16D7F;
     padding-left: 29px;
     margin-top: 39px;
@@ -147,7 +147,7 @@ label+[type="password"]:hover {
     position: relative;
 }
 
-.join-btn:before {
+.registration__join-btn:before {
     content: '';
     width: 18px;
     height: 10px;
@@ -164,7 +164,7 @@ label+[type="password"]:hover {
 
 }
 
-.registration__section-title {
+.registration__inf-title {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -174,7 +174,7 @@ label+[type="password"]:hover {
 
 }
 
-.registration__section-text {
+.registration__inf-text {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -184,7 +184,7 @@ label+[type="password"]:hover {
 
 }
 
-.registration__section-text-img {
+.registration__inf-text-img {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
@@ -195,7 +195,7 @@ label+[type="password"]:hover {
     position: relative;
 }
 
-.registration__section-text-img:before {
+.registration__inf-text-img:before {
     content: '';
     width: 20px;
     height: 16px;
@@ -207,16 +207,16 @@ label+[type="password"]:hover {
 }
 
 @media (min-width: 391px) and (max-width: 768px) {
-    .registration__main-title {
+    .registration__title {
         padding-left: 16px;
     }
 
-    .main__wrapper {
+    .registration__wrapper {
         margin-top: 40px;
         justify-content: space-around;
     }
 
-    .registration__section-title {
+    .registration__inf-title {
 
         font-size: 16px;
         line-height: 19px;
@@ -224,13 +224,13 @@ label+[type="password"]:hover {
         margin-bottom: 14px;
     }
 
-    .registration__section-text {
+    .registration__inf-text {
         font-size: 16px;
         line-height: 19px;
 
     }
 
-    .registration__section-text-img {
+    .registration__inf-text-img {
         font-size: 16px;
         line-height: 19px;
 
@@ -242,26 +242,26 @@ label+[type="password"]:hover {
         box-sizing: border-box;
     }
 
-    .registration__main-section-inf {
+    .registration__inf {
         width: 354px;
     }
 
-    .registration__main-login {
+    .registration__login {
         width: 360px;
     }
 }
 
 @media (max-width: 390px) {
-    .registration__main-title-style {
+    .registration__title-style {
         text-align: center;
     }
 
-    .main__wrapper {
+    .registration__wrapper {
         flex-direction: column;
         align-items: center;
     }
 
-    .registration__main-login {
+    .registration__login {
         width: 358px;
     }
 
@@ -272,30 +272,30 @@ label+[type="password"]:hover {
         box-sizing: border-box;
     }
 
-    .registration__main-section-inf {
+    .registration__inf {
         width: 358px;
         margin-bottom: 100px;
     }
 
-    .registration__section-title {
+    .registration__inf-title {
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 14px;
     }
 
-    .registration__section-text {
+    .registration__inf-text {
         font-size: 16px;
         line-height: 19px;
 
     }
 
-    .registration__section-text-img {
+    .registration__inf-text-img {
         font-size: 16px;
         line-height: 19px;
 
     }
 
-    .join-btn {
+    .registration__join-btn {
         margin-bottom: 40px;
     }
 }
