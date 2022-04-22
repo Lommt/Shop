@@ -2,6 +2,20 @@
     background-color: $black-bkg;
     position: relative;
 
+    .header__item {
+        margin-left: 34px;
+    }
+
+    .header__item-nav {
+        margin-left: 34px;
+    }
+
+    .header__button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
 }
 
 .header-flx {
@@ -13,6 +27,7 @@
     .header__logo {
         display: flex;
         align-items: center;
+
     }
 
     .header__list {
@@ -36,50 +51,70 @@
         position: relative;
         margin-left: 22px;
     }
-}
 
-.header__search {
+    .header__search:hover {
+        display: block;
+    }
+
+
+
     [type="search"] {
         padding: 10px 34px;
         border: none;
-        outline: 1px solid black;
+        outline: 1px solid $black-bkg;
         border-radius: 10px;
+        background: $black-bkg;
     }
 
+    .search-svg-img {
+        position: absolute;
+        top: 8px;
+        left: 6px;
+        height: 20px;
+        width: 20px;
+
+    }
+
+    .search-path-fill {
+        fill: white;
+    }
+
+    [type="search"]:hover,
+    [type="search"]:focus {
+        outline: 1px solid #f54c4c;
+        border: 2px solid #f54c4c;
+        background: #FFFFFF;
+
+    }
+
+    [type="search"]:hover+.search-svg-img>path,
+    [type="search"]:focus+.search-svg-img>path {
+        fill: $black-bkg;
+    }
 }
 
-.header__search::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 13px;
-    left: 7px;
-    /*background-image: url(/step2/Shop/img/loupe.svg);
-    background-size: 10px 10px;*/
+@media (min-width: 391px) and (max-width: 768px) {
+    .header__item {
+        margin-left: 25px;
+    }
 
-
+    .header-flx {
+        justify-content: space-around;
+    }
 }
 
-[type="search"]:hover {
-    outline: 1px solid #FFFFFF
-}
 
-[src="./img/loupe.svg"] {
-    position: absolute;
-    top: 8px;
-    left: 6px;
-    height: 20px;
-    width: 20px;
-}
+@media (max-width: 391px) {
 
-.header__item {
-    margin-left: 34px;
-}
+    .header__item {
+        display: none;
+    }
 
-.header__button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+    .header-flx {
+        justify-content: space-around;
+    }
 
+    [type="search"] {
+        padding: 10px 5px;
+    }
 }
