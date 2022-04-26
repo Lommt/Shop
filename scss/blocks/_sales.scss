@@ -1,14 +1,14 @@
-.main__section-sales {
+.sales {
     margin-top: 65px;
 }
 
-.main__section-sales-list1 {
+.sales__list {
     display: flex;
     justify-content: space-between;
 
 }
 
-.main__section-sales-item1 {
+.sales__item-forwomen {
     background-image: url(../img/sales-women.jpg);
     background-repeat: no-repeat;
     width: 360px;
@@ -19,7 +19,7 @@
     flex-direction: column;
 }
 
-.main__section-sales-item2 {
+.sales__item-formen {
     background-image: url(../img/sales-man.jpg);
     background-repeat: no-repeat;
     width: 360px;
@@ -30,7 +30,7 @@
     flex-direction: column;
 }
 
-.main__section-sales-item3 {
+.sales__item-forkids {
     background-image: url(../img/sales-child.jpg);
     background-repeat: no-repeat;
     width: 360px;
@@ -41,7 +41,7 @@
     flex-direction: column;
 }
 
-.main__section-sales-item4 {
+.sales__item-accesories {
     background-image: url(../img/saled-accesories.jpg);
     background-repeat: no-repeat;
     margin-top: 30px;
@@ -52,7 +52,7 @@
     flex-direction: column;
 }
 
-.main__section-sales-list-title {
+.sales__item-title {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -62,7 +62,7 @@
 
 }
 
-.main__section-sales-list-text {
+.sales__item-text {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -71,58 +71,58 @@
 }
 
 @media (min-width: 391px) and (max-width: 768px) {
-    .main__section-sales-item1 {
+    .sales__item-forwomen {
         width: 232px;
         height: 167px;
 
     }
 
-    .main__section-sales-item2 {
+    .sales__item-formen {
         width: 232px;
         height: 167px;
 
     }
 
-    .main__section-sales-item3 {
+    .sales__item-forkids {
         width: 232px;
         height: 167px;
 
     }
 
-    .main__section-sales {
+    .sales {
         margin-top: 20px;
     }
 
-    .main__section-sales-list1 {
+    .sales__list {
         justify-content: space-around;
 
     }
 
-    .main__section-sales-item4 {
+    .sales__item-accesories {
         margin-left: 17px;
         margin-right: 17px;
     }
 }
 
 @media (max-width: 390px) {
-    .main__section-sales-list1 {
+    .sales__list {
         flex-direction: column;
         align-items: center;
     }
 
-    .main__section-sales-item1 {
+    .sales__item-forwomen {
         margin-bottom: 32px;
     }
 
-    .main__section-sales-item2 {
+    .sales__item-formen {
         margin-bottom: 32px;
     }
 
-    .main__section-sales-item3 {
+    .sales__item-forkids {
         margin-bottom: 32px;
     }
 
-    .main__section-sales-item4 {
+    .sales__item-accesories {
         height: 111px;
         background-position: center;
         margin-left: 15px;

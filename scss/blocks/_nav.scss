@@ -1,26 +1,22 @@
-.header__button:hover+.header__nav,
-.header__button:focus+.header__nav {
+.header__button:hover+.nav,
+.header__button:focus+.nav {
     display: block;
 }
 
 .header__button:hover {
-    svg>path:hover {
+    svg>path {
         fill: red;
     }
 }
 
-.burger-path-fill {
-    fill: white;
-}
-
-.header__nav:hover {
+.nav:hover {
     display: block;
 }
 
-.header__nav-list {
+.nav__list {
     margin-left: 34px;
 
-    .header__nav-item {
+    .nav__item {
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
@@ -49,8 +45,8 @@
 
 }
 
-.header__nav {
-    .header__nav-title {
+.nav {
+    .nav__title {
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;

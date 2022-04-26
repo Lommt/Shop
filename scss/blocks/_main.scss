@@ -1,3 +1,22 @@
+.main__title {
+    background: #F8F3F4;
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main__title-style {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    width: 1140px;
+
+}
+
 .main__cart {
     display: flex;
     justify-content: space-between;
