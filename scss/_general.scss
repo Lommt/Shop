@@ -10,6 +10,18 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    box-sizing: border-box;
+    outline: 3px solid grey;
+    color: grey;
+}
+
+button:active {
+    box-sizing: border-box;
+    border: 3px solid grey;
+
+}
+
 img {
     display: block;
 }
