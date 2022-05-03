@@ -105,6 +105,13 @@
 .catalog__product-title:hover {
     box-sizing: border-box;
     outline: 3px solid #f54c4c;
+    color: #F26376;
+}
+
+.catalog__product-title:active {
+    box-sizing: border-box;
+    outline: 3px solid grey;
+    color: grey;
 }
 
 .catalog__product-text {
