@@ -1959,4 +1959,134 @@ table {
   color: #EF5B70;
   font-size: 50px;
 }
+
+.catalog-page__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 51px;
+  padding-bottom: 55px;
+}
+
+.catalog-page__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3%;
+  background: white;
+  border: 0;
+  position: relative;
+}
+
+.catalog-page__btn::after {
+  content: url(/img/filter.svg);
+  position: absolute;
+  top: 2px;
+  left: 66px;
+}
+
+.catalog-page__filter-list {
+  display: noe;
+}
+
+.catalog-page__filter-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.catalog-page__btn-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.catalog-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 33%;
+}
+
+.catalog-page__item-text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.catalog-page__item-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  background: white;
+}
+
+.catalog-page__item-btn:active {
+  border: 0;
+}
+
+.fas {
+  margin-left: 10px;
+}
+
+.catalog-page__catalog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  grid-gap: 1%;
+}
+
+.pagination-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 87px;
+  margin-bottom: 96px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 284px;
+  height: 44px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  padding-left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination-list {
+  list-style-type: none;
+  color: #C4C4C4;
+}
+
+.pagination-list a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+}
+
+.pagination-list a:hover {
+  color: #F16D7F;
+  text-shadow: 5px 5px 0 0 #F16D7F;
+}
 /*# sourceMappingURL=style.css.map */
