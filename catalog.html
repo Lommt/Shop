@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/all.css">
     <title>Document</title>
 </head>
 
@@ -133,37 +134,359 @@
             </ul>
         </div>
     </header>
-    <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <main class="catalog-page container">
+        <section class="product__title">
+            <div class="container d-flex justify-content-between">
+                <h1 class="product__title-style container">
+                    new arrivals
+                </h1>
+                <div class="product__link">
+                    <a class="product__title-link" href="#">
+                        home
+                    </a>
+                    <a class="product__title-link p-0" href="#">
+                        / men
+                    </a>
+                    <span>
+                        <a class="product__title-link product__title-link-active" href="#">
+                            / new arrivals
+                        </a>
+                    </span>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/product3.jpg" class="d-block w-30 h-20" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/product2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/product1.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Предыдущий</span>
+        </section>
+        <section class="catalog-page__filter">
+            <button class="catalog-page__btn" type="submit">
+                <p class="catalog-page__btn-text">
+                    filter
+                </p>
+                <ul class="catalog-page__filter-list">
+                    <li class="catalog-page__filter-list-item">
+                        category
+                    </li>
+                    <ul>
+                        <li class="catalog-page__filter-item">
+                            Accessories
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Bags
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Denim
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Hoodies & Sweatshirts
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Jackets & Coats
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Polos
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Shirts
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Shoes
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Sweaters & Knits
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            T-Shirts
+                        </li>
+                        <li class="catalog-page__filter-item">
+                            Tanks
+                        </li>
+                    </ul>
+                    <li class="catalog-page__filter-list-item">
+                        brand
+                    </li>
+                    <li class="catalog-page__filter-list-item">
+                        designer
+                    </li>
+
+                </ul>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Следующий</span>
-            </button>
+            <ul class="catalog-page__list">
+                <li class="catalog-page__item">
+                    <button class="catalog-page__item-btn" type="submit">
+                        <p class="catalog-page__item-text">
+                            trending now
+                        </p>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="catalog-page__item-btn" type="submit">
+                        <p class="catalog-page__item-text">
+                            size
+                        </p>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </li>
+                <li>
+                    <button class="catalog-page__item-btn" type="submit">
+                        <p class="catalog-page__item-text">
+                            price
+                        </p>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section class="catalog-page__catalog">
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+            <ul class="catalog__product-list product__list-style">
+                <div class="catalog__product-block">
+                    <img class="catalog__product-img" src="img/product6.jpg" alt="product1" width="360px"
+                        height="420px">
+                    <div class="catalog__product-block-transparent"></div>
+                    <button class="catalog__product-btn-cart" type="submit">
+                        <img src="./img/add-to-cart.png" alt="">
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+                <li class="catalog__product-item">
+                    <a class="catalog__product-title" href="#">ellery x m'o capsule</a>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-text">
+                        Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                        Ellery
+                        teams up with Moda Operandi.
+                    </p>
+                </li>
+                <li class="catalog__product-item">
+                    <p class="catalog__product-textcash">
+                        $52.00
+                    </p>
+                </li>
+            </ul>
+
+
+        </section>
+        <div class="pagination-block">
+            <ul class="pagination">
+                <li class="pagination-list"><a href="#"><img src="./img/Pagination-left.png" alt=""></a></li>
+                <li class="pagination-list"><a href="#">1</a></li>
+                <li class="pagination-list"><a href="#">2</a></li>
+                <li class="pagination-list"><a href="#">3</a></li>
+                <li class="pagination-list"><a href="#">4</a></li>
+                <li class="pagination-list"><a href="#">5</a></li>
+                <li class="pagination-list"><a href="#">6</a></li>
+                <li class="pagination-list"><a href="#">7</a></li>
+                <li class="pagination-list">...</li>
+                <li class="pagination-list"><a href="#">20</a></li>
+                <li class="pagination-list"><a href="#"><img src="./img/Pagination-right.png" alt=""></a></li>
+            </ul>
         </div>
     </main>
     <footer>
@@ -307,9 +630,7 @@
             </ul>
         </div>
     </footer>
-
     <script src="./js/bootstrap.bundle.js"></script>
-
 </body>
 
 </html>
